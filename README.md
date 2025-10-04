@@ -2,7 +2,7 @@
 
 A powerful Laravel-based news aggregation system that fetches, normalizes, and serves articles from multiple news sources through a RESTful API. Built with SOLID principles, DRY architecture, and comprehensive filtering capabilities.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Features](#features)
 - [System Requirements](#system-requirements)
@@ -17,7 +17,7 @@ A powerful Laravel-based news aggregation system that fetches, normalizes, and s
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
 
-## ✨ Features
+##  Features
 
 ### Core Features
 - **Multi-Source Aggregation**: Fetches news from NewsAPI, The Guardian, and BBC News
@@ -36,7 +36,7 @@ A powerful Laravel-based news aggregation system that fetches, normalizes, and s
 - **Comprehensive Testing**: PHPUnit tests for all endpoints
 - **API Resources**: Consistent JSON responses
 
-## 🔧 System Requirements
+##  System Requirements
 
 - PHP 8.1 or higher
 - Composer
@@ -46,7 +46,7 @@ A powerful Laravel-based news aggregation system that fetches, normalizes, and s
   - [NewsAPI](https://newsapi.org/)
   - [The Guardian](https://open-platform.theguardian.com/)
 
-## 📦 Installation
+##  Installation
 
 ### 1. Clone the Repository
 
@@ -110,7 +110,7 @@ php artisan serve
 
 The API will be available at `http://localhost:8000/api`
 
-## ⚙️ Configuration
+##  Configuration
 
 ### API Keys Setup
 
@@ -139,7 +139,7 @@ Add to `config/services.php`:
 ],
 ```
 
-## 🗄️ Database Setup
+##  Database Setup
 
 ### Database Schema
 
@@ -183,7 +183,7 @@ php artisan migrate:fresh
 php artisan migrate:rollback
 ```
 
-## 📚 API Documentation
+##  API Documentation
 
 ### Base URL
 ```
@@ -389,7 +389,7 @@ GET /api/articles/personalized/feed
 
 Returns articles matching user's preferences.
 
-## 🔄 News Sources
+##  News Sources
 
 ### Supported Sources
 
@@ -462,7 +462,7 @@ public function __construct()
 }
 ```
 
-## ⏰ Scheduled Tasks
+##  Scheduled Tasks
 
 ### Automatic News Fetching
 
@@ -508,7 +508,7 @@ php artisan schedule:list
 php artisan schedule:run
 ```
 
-## 🧪 Testing
+##  Testing
 
 ### Run All Tests
 
@@ -547,7 +547,7 @@ Tests use SQLite in-memory database. Configuration in `phpunit.xml`:
 <env name="DB_DATABASE" value=":memory:"/>
 ```
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Design Patterns
 
@@ -636,7 +636,7 @@ tests/
         └── PreferencesApiTest.php
 ```
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -738,7 +738,7 @@ tail -f /var/log/php-fpm/error.log  # Linux
 tail -f /usr/local/var/log/php-fpm.log  # macOS
 ```
 
-## 📊 Performance Optimization
+##  Performance Optimization
 
 ### Database Indexes
 
@@ -778,7 +778,7 @@ $articles = Article::with('comments')->get();
 $articles = Article::select('id', 'title', 'published_at')->get();
 ```
 
-## 🔐 Security
+##  Security
 
 ### API Rate Limiting
 
@@ -812,34 +812,11 @@ Article::where('source', $source)->get();
 DB::select("SELECT * FROM articles WHERE source = '$source'");
 ```
 
-## 📝 API Rate Limits
 
-### NewsAPI
-- Free tier: 100 requests/day
-- Development: 1,000 requests/day ($49/month)
-- Business: 250,000 requests/day ($449/month)
 
-### The Guardian
-- Free tier: 5,000 requests/day
-- Tier 1: 50,000 requests/day
-- Enterprise: Custom limits
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Code Standards
-
-- Follow PSR-12 coding standards
-- Write tests for new features
-- Update documentation
-- Use meaningful commit messages
-
-## 📄 License
+##  License
 
 This project is licensed under the MIT License.
 
@@ -847,11 +824,6 @@ This project is licensed under the MIT License.
 
 - Chima Ejiofor - Initial work
 
-## 🙏 Acknowledgments
-
-- [NewsAPI](https://newsapi.org/) for news aggregation
-- [The Guardian Open Platform](https://open-platform.theguardian.com/)
-- Laravel community for excellent documentation
 
 
 
