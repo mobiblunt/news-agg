@@ -51,8 +51,8 @@ A powerful Laravel-based news aggregation system that fetches, normalizes, and s
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd news-aggregator
+git clone https://github.com/mobiblunt/news-agg.git
+cd news-agg
 ```
 
 ### 2. Install Dependencies
