@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class UserPreference extends Model
 {
+    use HasFactory;
+    
     protected $fillable = [
         'user_id',
         'sources',
